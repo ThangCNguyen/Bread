@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/budget"
+    tools:context=".BudgetPageActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:background="@drawable/cornerbread"
+        android:layout_alignParentRight="true"
+        ></ImageView>
+    <TextView
+        android:id="@+id/intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:translationY="160dp"
+        android:text="Add a Budget"
+        android:textSize="30dp"
+        android:textColor="@color/black"
+        android:fontFamily="sans-serif"
+        />
+
+    <EditText
+        android:id="@+id/et_budgetname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:drawableStart="@drawable/breadname"
+        android:background="#30ffffff"
+        android:hint="  Budget Name"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#b5b5b5" />
+
+    <EditText
+        android:id="@+id/et_numDays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et_budgetname"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="-205dp"
+        android:drawableStart="@drawable/budgetduration"
+        android:background="#30ffffff"
+        android:hint="  Budget Duration (in number of days)"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#b5b5b5" />
+
+    <EditText
+        android:id="@+id/et_budgetlimit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_budgetname"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="75dp"
+        android:layout_marginEnd="10dp"
+        android:drawableStart="@drawable/budgetamount"
+        android:background="#30ffffff"
+        android:hint="  Budget Limit (in USD)"
+        android:inputType="text"
+        android:padding="20dp"
+        android:textColor="@color/black"
+        android:textColorHint="#b5b5b5" />
+
+    <Button
+        android:id="@+id/btn_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_budgetlimit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="60dp"
+        android:backgroundTint="@color/black"
+        android:ems="10"
+        android:textColor="@color/white"
+        android:text="Send to Oven" />
+
+    <ImageView
+        android:id="@+id/backArrow"
+        android:layout_width="55dp"
+        android:layout_height="47dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="27dp"
+        android:layout_marginEnd="335dp"
+        android:layout_marginBottom="657dp"
+        app:srcCompat="@drawable/arrow" />
+
+</RelativeLayout>
